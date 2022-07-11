@@ -23,6 +23,7 @@ public class Main {
                 System.out.println(activeNode.answers[j].getDesc());
             }
 
+
             numOfAnswers = activeNode.answers.length;
             numOfThisNode = activeNode.numOfNode*numOfAnswers+answer;
 
