@@ -1,7 +1,6 @@
 
 
 
-
 public class Node {
 
     Answer[] answers;
@@ -14,7 +13,7 @@ public class Node {
         this.numOfNode = numOfNode;
     }
 
-    public Node switcher(Answer answer, Node[] nodes){
-       return nodes[answer.getNum()];
+    public Node switcher(Answer answer, Node[] nodes) {
+        return nodes[answer.getNum()];
     }
 }

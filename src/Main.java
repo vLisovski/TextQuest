@@ -11,13 +11,13 @@ public class Main {
         int numOfThisNode = 2;
         int numOfAnswers = 3;
 
-        while(true){
+        while (true) {
 
             Scanner sc = new Scanner(System.in);
 
             System.out.println("Choose your answer:");
             int answer = sc.nextInt();
-            Node activeNode = Nodes.nodes[numOfThisNode*numOfAnswers+answer];
+            Node activeNode = Nodes.nodes[numOfThisNode * numOfAnswers + answer];
 
             for (int j = 0; j < activeNode.answers.length; j++) {
                 System.out.println(activeNode.answers[j].getDesc());
@@ -25,7 +25,7 @@ public class Main {
 
 
             numOfAnswers = activeNode.answers.length;
-            numOfThisNode = activeNode.numOfNode*numOfAnswers+answer;
+            numOfThisNode = activeNode.numOfNode * numOfAnswers + answer;
 
         }
     }
